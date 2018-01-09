@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+        <title>User Signup</title>
+    </head>
+
+    <body>
+        <h1>Signup</h1>
+        <form method="post" action="/feedback">
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td>
+                        <input name="username" type="text" value="{{user_val}}">
+                        <span class="error">{{username_error}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td>
+                        <input name="password" type="password">
+                        <span class="error">{{password_error}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="verify">Verify Password:</label></td>
+                    <td>
+                        <input name="verify" type="password">
+                        <span class="error">{{verify_error}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail (Optional):</label></td>
+                    <td>
+                        <input name="email" type="text" value="{{email_val}}">
+                        <span class="error">{{email_error}}</span>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="&#36ell ur sole">
+        </form>
+    </body>
+</html>
